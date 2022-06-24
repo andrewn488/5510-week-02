@@ -1,0 +1,183 @@
+---
+title: "Week-02-Notes"
+author: "Andrew Nalundasan"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Overview Video
+
+None
+
+# Problem Definition & Objectives
+
++ Deeper dive into project management
++ Defining your project
+    
+    + Understand what it is you're trying to solve
+    + What are the objectives you seek to fulfill
+    + What do you want to do and what don't you want to do
+
++ Problem Definition
+
+    + Get to the root cause - 5 why analysis
+    + What are the challenges that must be faced with this project?
+    + The problem definition will allow everyone to be on the same page as the direction of the project. 
+        + Problem Statement == Problem Definition
+        
++ 5W1H Approach
+
+    + Who / What / Where / When / Why / How
+    
++ Problem Definition Checklist
+
+    + **Pain** <- I know the consequences of not addressing the issue
+    + **Real** <- The problem is not an anomaly; it has been acknowledged by a number of people
+    + **Obvious** <- the importance of the problem is clear to all who read it, even if they are not familiar with the situation
+    + **Bound** <- I know where the problem begins and ends
+    
++ Good Examples: 
+
+    + In the last year, we have 30% of customer switch carriers, which lost our company over $40,000 in revenue
+        + Quantitiative measures that define what the problem is
+        
++ Project Objectives
+
+    + What do you plan to achieve by the end of the project?
+        + Deliverables
+        + Assets
+        + Intangible assets
+    + Be specific in the objectives using quantitative language
+    
+
+![](objectives_vs_goals.png)
+
++ Objectives: define what you want and how to do it
++ Goal: more high level focused on business objectievs
+
+![](project_objectives.png)
+
++ defined when we want it to get done
++ define quantitative measure
++ define objectives clearly
+
++ Project Requirements
+
+    + Once the problem definition is created and the objectives are defined, we need to determine the requirements so that we can define the project scope
+    
+
+# Requirements
+
++ Project Requirements
+
+    + Can be applied to analytics projects
+    + Provieds good overview picture of what sort of challenges could arise
+    
++ Traditional Software Requirements
+
+    + Act as bridge between IT and Business
+        + No need for this since analytics projects, both roles are the same people
+    + Provide information on what exactly the system should do
+        + Little ambiguity exists in the team about what the purpose of the system 
+    + No formal testing in analytics projects
+    + Builders and users both understand the degree of success from the project by looking at the results
+    + Having a clear definition of success (knowing where the project ends) is imperative
+    
++ Requirements Extraction
+
+    + Source systems involved
+    + Business processes involved
+    + User and business sophistication
+    + Important data entitites
+    
+![](reqs_extraction_01.png)
+
+![](reqs_extraction_02.png)
+
+![](reqs_extraction_03.png)
+
+![](reqs_extraction_04.png)
+
+# Project Scope & Risk Assessment
+
++ Project scope allows a defined boundary of what to include and not to include in the project
++ Using the requirements, scope can be determined from the solutions and requirements previously chosen
++ Scope Creep <- when features continue to be added to a project and delay its expected release date
+
++ Project scope statement
+
+    + offers clear guidance on the intentions and scope of the project
+    
+![](project_scope_statement.png)
+
++ Project Deliverables
+
+    + Working Models to run on new data to predict new customer churn
+    + Dashboard to display the predicted customer churn
+    + Dashboard to display historical customer churn
+    
++ Acceptable Criteria: 
+    
+    + Successful implementation of deliverables
+    + Positive results seen from using predictive analysis in the future
+    
++ Constraints and Exclusions:
+
+    + Constrained by the overwhelming amount of data. Needs to be reduced to most important variables
+    + Constrained by time schedule of 10 weeks
+    + Exclusion based around needing to predict beyond the next 6-months of churn
+    + Assumptions: 
+        + Data given isup to date and based on accurate data
+        + Budget is $250,000
+
++ Risk Assessment
+
+    + Anticipating problems and risks will prevent delays and hang ups in the future
+    + Identifying risks randomly in a brainstorming session can be detrimental
+    + Better to draw up a list of categories and assign risks identified from previous projects into these
+
++ Phases of Risk Assessment
+
+    + Risk identification 
+        + Compile list of risks from previous projects
+        + Identify common risks
+        + State cause, the risk itself, and the effect on the project
+            + "The risk of there being too many features to use in models will make it so thtat dimensionality prevents predictive analysis" 
+    + Categorize and Group Duplicates
+        + Identify duplicate risks and triggers other risks
+        + "Too much data risk - category: data preprocessing risk" 
+    + Qualify Risks (Assign Probabiliy and Impact of each)
+        + What is the risk - how will I recognize it when I see it
+        + What is probability of it actually happening?
+        + How serious of a threat does it pose?
+        + "We will see it when we attempt to run models on the data and the time to complete is impractical. It is moderately probable, and it poses a high threat unless dealt with"
+    + Determine Risk Response Phase
+        + Risk score
+        + Find practical solution to deal with the risk
+        + "Find feature reduction solution or fi its too much rows, find numerosity reduction solution" 
+    + Document Risk Phase
+        + Maintain Risk Register to track throughout the project to ensure action is taken
+        + Risk reevaluation may be added to project timeline to maintain awareness around all risks. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
